@@ -1,3 +1,4 @@
+// src/components/GeneralInfo.js
 import React from 'react';
 
 function GeneralInfo({ formData, handleInputChange, nextStep }) {
