@@ -1,0 +1,125 @@
+/* Variables */
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$background-color: #2a2a2a;
+$border-color: #444;
+$text-color: #fff;
+$font-family: 'Roboto', sans-serif;
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  color: $primary-color;
+  margin-bottom: 10px;
+}
+
+/* App container */
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Formulaire Styling */
+.formulaire-module {
+  width: 30%;
+  background-color: #333;
+  padding: 20px;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: $text-color;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="file"],
+textarea {
+  padding: 8px;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  background-color: #444;
+  color: $text-color;
+}
+
+input[type="color"] {
+  width: 50px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: $primary-color;
+  color: #fff;
+  margin-right: 10px;
+}
+
+/* Preview Section */
+.preview {
+  width: 50%;
+  background-color: #e9ecef;
+  padding: 20px;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview svg {
+  max-width: 100%;
+  height: auto;
+  transform: scale(0.9); /* Ajustement de l'échelle */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .formulaire-module,
+  .preview {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
